@@ -1,4 +1,4 @@
-# Decoding-Wireless-Buttons-Data
+# Decoding-Wireless-Buttons-Data (Fanvil, Welltech,rFbyte etc.)
 Decoding wireless signaling format sent by Manchester encoding used by many vendors such as Fanvil, Welltech rFbyte etc.
 In most cases is used A7329 (AMICCOM) a low-power, 433mHz RF transceiver often used in wireless button and remote control systems.
 A7329 is a general-purpose transceiver—the actual packet structure (encoding, ID, button code, etc.) is defined by the firmware of the microcontroller that communicates with the A7329.

@@ -1,4 +1,5 @@
-# Decoding-Wireless-Buttons-Data (Fanvil, Welltech,rFbyte etc.)
+# Decoding-Wireless-Buttons-Data **(Fanvil, Welltech,rFbyte etc.)**
+
 Decoding wireless signaling format sent by Manchester encoding used by many vendors such as Fanvil, Welltech rFbyte etc.
 In most cases is used A7329 (AMICCOM) a low-power, 433mHz RF transceiver often used in wireless button and remote control systems.
 A7329 is a general-purpose transceiver—the actual packet structure (encoding, ID, button code, etc.) is defined by the firmware of the microcontroller that communicates with the A7329.
@@ -23,7 +24,7 @@ Each code is 8 hex digits (4 bytes, or 32 bits), for example:
 First 2 or 3 bytes = ID, last byte = button code or button code + rolling counter.
 Or: 3 bytes ID + 1 byte data.
 
-# Example Mapping
+## Example Mapping
 Let’s see your sample data, with each byte split:
 0202e4e9 → 02 02 E4 E9  
 
@@ -70,7 +71,7 @@ To emulate a FAnvil button, transmit the same 32-bit code from another compatibl
 To clone, copy the code to another transmitter or microcontroller with the same wireless stack.
 
 If You Need to Generate or Recognize the Code in Software:
-# Example in Python
+## Example in Python
 python
 Copy
 Edit
@@ -91,7 +92,7 @@ def get_button(code):
             return name
     return "Unknown"
 
-# Example usage:
+## Example usage:
 print(get_button("0202e4e9"))  # Output: Button1
 Summary Table:
 

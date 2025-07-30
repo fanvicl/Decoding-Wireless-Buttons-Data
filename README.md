@@ -67,7 +67,7 @@ Already have the “decoded” values.
 000003a7 → Button 4
 
 
-To emulate a FAnvil button, transmit the same 32-bit code from another compatible device.
+To emulate a Fanvil button, transmit the same 32-bit code from another compatible device.
 To clone, copy the code to another transmitter or microcontroller with the same wireless stack.
 
 If You Need to Generate or Recognize the Code in Software:
@@ -94,8 +94,8 @@ def get_button(code):
 
 ## Example usage:
 print(get_button("0202e4e9"))  # Output: Button1
-Summary Table:
 
+Summary Table:
 Button	Code (Hex)	Code (Binary)
 
 Button 1	0202e4e9	00000010 00000010 11100100 11101001
@@ -108,4 +108,7 @@ Button 4	000003a7	00000000 00000000 00000011 10100111
 
 
 No rolling, no cryptography, no advanced protocol—just fixed 32-bit codes per Fanvil button.
+
 All you need to do is map each code to each button in your application or script.
+
+All Fanvil wireless devices such as button, pull cord or pendant use the same encoding method independant of the chipset used.

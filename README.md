@@ -93,8 +93,10 @@ def get_button(code):
 
 # Example usage:
 print(get_button("0202e4e9"))  # Output: Button1
-Summary Table
+Summary Table:
+
 Button	Code (Hex)	Code (Binary)
+
 Button 1	0202e4e9	00000010 00000010 11100100 11101001
 
 Button 2	0000b14b	00000000 00000000 10110001 01001011
